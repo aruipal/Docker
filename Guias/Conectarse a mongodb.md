@@ -6,6 +6,7 @@
 ## ✅ 1. Conectarte con Mongo Express (interfaz web en navegador)
 Para version MongoDB 4.4
 ### 📦 Paso 1: Lanzar Mongo Express apuntando a esa IP
+- Descargar la imagen de Mongo Express y crear contenedor.
 - Ejecuta el siguiente comando:
 ```
 sudo docker run -d \
@@ -21,7 +22,7 @@ sudo docker run -d \
 ```
 - 🔐 Esto hará que Mongo Express se conecte a la IP estática del servidor (donde está MongoDB corriendo).
 - Cambiar los usuarios y contraseñas por los correspondientes.\
-**🌐 Acceder desde el navegador**
+### 🌐 Acceder desde el navegador
 - Desde cualquier equipo en la red, abre:
 ```
 http://192.168.1.5:8081
