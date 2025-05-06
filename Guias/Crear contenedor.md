@@ -47,7 +47,7 @@ Esto mostrará la lista de contenedores en ejecución.
 ### 4️⃣ Acceder a MongoDB desde el contenedor
 - Si quieres ingresar a la CLI de MongoDB:
 ```
-sudo docker exec -it mongodb-container mongosh
+sudo docker exec -it mongodb-container mongo
 ```
 Si aún no tienes **mongosh**, puedes usar **mongo**.
 
