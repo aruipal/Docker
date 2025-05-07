@@ -39,10 +39,14 @@ sudo docker run -d --name mongodb-container -p 27017:27017 \
 **-p 27017:27017:** Expone el puerto predeterminado de MongoDB.
 
 ### 3️⃣ Verificar que el contenedor está corriendo
+- Esto mostrará la lista de contenedores en ejecución.
 ```
 sudo docker ps
 ```
-Esto mostrará la lista de contenedores en ejecución.
+- Si no está corriendo arrancalo con:
+```
+sudo docker start mongodb-container
+```
 
 ### 4️⃣ Acceder a MongoDB desde el contenedor
 - Si quieres ingresar a la CLI de MongoDB:
