@@ -1,4 +1,5 @@
 # 💻 Crear contenedor Apache
+## ❗ No es necesario si en mi aplicación web voy a usar un framework como Flask.
 ### ✅ Paso 1: Crear un contenedor con Apache
 - Puedes usar una imagen oficial de Apache basada en Debian (httpd):
 ```
