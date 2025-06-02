@@ -52,14 +52,15 @@ pip freeze > requirements.txt
 👌 Con esto ya tenemos todo listo para crear nuestra primera aplicación Flask.
 
 ### 3️⃣ Instalacion de pymongo
-
+- Para que Flask pueda conectarse a MongoDB, necesitamos la librería pymongo.
+  - Instálala desde la terminal con el siguiente comando:
+  ```
+  pip install pymongo
+  ```
 
 ### 4️⃣ 🐍 Crear aplicación básica
 - Crear archivo base **app.py**:
   - Se crea una ruta /
   - Corre en http://127.0.0.1:5000/
 
-
-
-
-### Plantillas HTML
+### 5️⃣ 📋 Plantillas HTML
