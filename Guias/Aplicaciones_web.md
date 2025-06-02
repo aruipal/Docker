@@ -51,7 +51,10 @@ pip freeze > requirements.txt
 
 👌 Con esto ya tenemos todo listo para crear nuestra primera aplicación Flask.
 
-### 3️⃣ 🐍 Crear aplicación básica
+### 3️⃣ Instalacion de pymongo
+
+
+### 4️⃣ 🐍 Crear aplicación básica
 - Crear archivo base **app.py**:
   - Se crea una ruta /
   - Corre en http://127.0.0.1:5000/
