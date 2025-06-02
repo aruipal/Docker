@@ -30,14 +30,28 @@ sudo docker rmi -f <IMAGE_ID>
 ### 2️⃣ Crear y ejecutar un contenedor MongoDB
 - Si quieres establecer una contraseña para el acceso:
 ```
-sudo docker run -d --name mongodb-container -p 27017:27017 \
+sudo docker run -d --name mongodb-container \
+  --restart=always \
+  -p 27017:27017 \
   -e MONGO_INITDB_ROOT_USERNAME=admin \
-  -e MONGO_INITDB_ROOT_PASSWORD=secret mongo:4.4
+  -e MONGO_INITDB_ROOT_PASSWORD=secret \
+  mongo:4.4
 ```
+### 🧠 Campos:
 **-d:** Ejecuta el contenedor en segundo plano.\
 **--name mongodb-container:** Asigna un nombre al contenedor.\
-**-p 27017:27017:** Expone el puerto predeterminado de MongoDB.
+**--restart=always:** arranca el contenedor automaticamente cuando se reinicie el servidor\
+**-p 27017:27017:** Expone el puerto predeterminado de MongoDB.\
+**mongo:4.4:** Baja la versión 4.4 de mongodb, si ponemos mongo:latest se descargará la última.
+___
 
+***✅ Modificar el contenedor existente (sin eliminarlo)***
+```
+sudo docker update --restart=always mongodb-container
+```
+- Esto cambia la política de reinicio sin borrar ni recrear el contenedor: *always, no, unless-stopped...*
+- Se puede modificar cualquier otro campo.
+___
 ### 3️⃣ Verificar que el contenedor está corriendo
 - Esto mostrará la lista de contenedores en ejecución.
 ```
